@@ -1,0 +1,88 @@
+table {
+  border-collapse: collapse;
+  /* fusionner les bordures des cellules */
+  width: 100%;
+  /* occuper toute la largeur de la page */
+}
+
+th,
+td {
+  border: 1px solid black;
+  /* ajouter une bordure noire aux cellules */
+  padding: 10px;
+  /* ajouter un espace entre le contenu et la bordure */
+  text-align: center;
+  /* centrer le texte dans les cellules */
+}
+
+caption {
+  font-weight: bold;
+  /* mettre le texte en gras */
+  font-size: 20px;
+  /* augmenter la taille du texte */
+  margin-bottom: 10px;
+  /* ajouter un espace sous le titre */
+}
+
+thead {
+  background-color: lightgray;
+  /* changer la couleur de fond de l'en-tête */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+  /* changer la couleur de fond des lignes impaires */
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightblue;
+  /* changer la couleur de fond des lignes paires */
+}
+
+a {
+  color: green;
+  /* changer la couleur du lien */
+  text-decoration: none;
+  /* enlever le soulignement du lien */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* ajouter un soulignement au survol du lien */
+}
+
+/* Ajouter une marge entre chaque film */
+li {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  /* Ajout de marge en bas pour l'espace entre les lignes */
+}
+
+/* Styliser le bouton "Voir les détails" */
+#plus {
+  background-color: transparent;
+  /* Fond transparent */
+  color: blue;
+  /* Couleur du texte bleue */
+  border: 1px solid blue;
+  /* Bordure bleue */
+  padding: 5px 10px;
+  /* Padding autour du texte */
+  cursor: pointer;
+}
+
+/* Styliser le contour du bouton "Voir les détails" */
+button:hover {
+  background-color: blue;
+  /* Fond bleu au survol */
+  color: white;
+  /* Texte blanc au survol */
+}
+
+/* Ajouter une marge autour de l'image */
+img {
+  margin-bottom: 15px;
+  /* Ajout de marge en bas de l'image */
+  height: 400px;
+  /* Définir une hauteur fixe pour toutes les images */
+}
