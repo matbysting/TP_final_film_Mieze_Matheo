@@ -1,6 +1,6 @@
 <template>
     <div>
-      <!-- Afficher les boutons de pagination -->
+      
       <button v-for="pageNumber in totalPages" :key="pageNumber" @click="changePage(pageNumber)">
         {{ pageNumber }}
       </button>
@@ -24,7 +24,7 @@
     methods: {
       changePage(pageNumber) {
         this.currentPage = pageNumber;
-        // Émettre un événement pour informer le composant parent du changement de page
+       
         this.$emit('page-change', pageNumber);
       },
     },

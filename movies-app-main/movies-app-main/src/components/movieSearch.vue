@@ -16,9 +16,8 @@ export default {
     },
     watch: {
         searchQuery: debounce(function (newVal) {
-            // Utiliser debounce pour déclencher l'événement avec un léger délai après la saisie de l'utilisateur
-            this.$emit('searchMovieEmit', newVal); // Émettre un événement searchMovieEmit avec la valeur de recherche
-        }, 300), // Délai de 300 millisecondes après la fin de la saisie
+            this.$emit('searchMovieEmit', newVal); 
+        }, 300), 
     },
 };
 </script>

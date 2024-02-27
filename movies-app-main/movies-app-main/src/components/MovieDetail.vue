@@ -7,11 +7,11 @@
                     <div class="title">{{ detailsFilm.title }}</div>
                     <div>{{ detailsFilm.release_date }}</div>
                     <div>{{ detailsFilm.overview }}</div>
-                    <!-- Ajoutez d'autres détails du film ici -->
+
                 </v-card-text>
                 <v-card-actions>
                     <v-btn color="blue darken-1" text @click="closeDetail">Fermer</v-btn>
-                    <!-- Ajoutez d'autres actions/boutons ici -->
+
                 </v-card-actions>
             </v-card>
         </v-dialog>
@@ -19,7 +19,7 @@
 </template>
   
 <script>
-import axios from 'axios'; // Importez axios ici
+import axios from 'axios';
 
 export default {
     name: "MovieDetail",
@@ -54,9 +54,8 @@ export default {
                     console.error("Erreur lors de la récupération des détails du film : ", erreur);
                 });
         },
-        closeDetail() { // Modifiez fermerDetail en closeDetail
-            // Émettre un événement vers le composant parent pour fermer les détails du film
-            this.$emit("close-detail"); // ou utilisez simplement this.dialog = false; si vous ne souhaitez pas émettre d'événement
+        closeDetail() {
+            this.$emit("close-detail");
         },
         getImageUrl(cheminAffiche) {
             return this.baseUrlImage + cheminAffiche;
