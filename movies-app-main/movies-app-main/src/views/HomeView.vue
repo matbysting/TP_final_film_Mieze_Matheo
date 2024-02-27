@@ -12,7 +12,7 @@
 import MoviesList from '../components/MovieList.vue';
 import MovieDetail from '../components/MovieDetail.vue';
 import MovieSearch from '../components/movieSearch.vue';
-import MoviePagination from '../components/MoviePagination.vue'; 
+import MoviePagination from '../components/MoviePagination.vue';
 
 export default {
   name: 'HomeView',
@@ -20,7 +20,7 @@ export default {
     MoviesList,
     MovieDetail,
     MovieSearch,
-    MoviePagination, 
+    MoviePagination,
   },
   data() {
     return {
@@ -36,7 +36,7 @@ export default {
     },
     setMovieSearch(searchQuery) {
       this.movieSearch = searchQuery;
-      this.currentPage = 1; 
+      this.currentPage = 1;
     },
     handlePageChange(page) {
       this.currentPage = page;

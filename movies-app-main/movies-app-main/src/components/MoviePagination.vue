@@ -18,7 +18,7 @@
     },
     data() {
       return {
-        currentPage: 1, // Initialisez la page actuelle à 1 par défaut
+        currentPage: 1, 
       };
     },
     methods: {
