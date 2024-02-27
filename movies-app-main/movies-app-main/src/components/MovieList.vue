@@ -88,5 +88,39 @@ export default {
 </script>
   
 <style>
+/* Ajouter une marge entre chaque film */
+li {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /* Ajout de marge en bas pour l'espace entre les lignes */
+}
 
+/* Styliser le bouton "Voir les détails" */
+button {
+    background-color: transparent;
+    /* Fond transparent */
+    color: blue;
+    /* Couleur du texte bleue */
+    border: 1px solid blue;
+    /* Bordure bleue */
+    padding: 5px 10px;
+    /* Padding autour du texte */
+    cursor: pointer;
+}
+
+/* Styliser le contour du bouton "Voir les détails" */
+button:hover {
+    background-color: blue;
+    /* Fond bleu au survol */
+    color: white;
+    /* Texte blanc au survol */
+}
+
+/* Ajouter une marge autour de l'image */
+img {
+    margin-bottom: 15px;
+    /* Ajout de marge en bas de l'image */
+    height: 400px;
+    /* Définir une hauteur fixe pour toutes les images */
+}
 </style>
