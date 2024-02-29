@@ -64,7 +64,7 @@
     },
     methods: {
       fetchMovieDetails() {
-        const apiKey = "7185432bb4f3cd6339be3e7f9d3cd370";
+        const apiKey = "Votre_API_KEY";
         axios
           .get(
             `https://api.themoviedb.org/3/movie/${this.movieId}?api_key=${apiKey}&language=fr-FR&append_to_response=credits`
