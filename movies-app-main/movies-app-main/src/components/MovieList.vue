@@ -48,7 +48,7 @@ export default {
     },
     methods: {
         fetchMovies() {
-            const api_key = '7185432bb4f3cd6339be3e7f9d3cd370';
+            const api_key = 'Votre_API_KEY';
             axios
                 .get(`https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&language=fr-FR&page=${this.currentPage}`)
                 .then((res) => {
